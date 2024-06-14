@@ -1,0 +1,12 @@
+{
+    "users": [],
+    "articles" : [
+        {
+            "id": 1,
+            "title": "Du beau temps chez les carolos!",
+            "description": "En ce jour du 13 juin nous avons l'honneur de ne pas avoir de pluie",
+            "publish_date": "2024-06-13",
+            "author": "Bambino"
+        }
+    ]
+}
