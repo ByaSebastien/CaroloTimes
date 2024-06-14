@@ -1,0 +1,9 @@
+@if(errors?.['required'] && control?.touched){
+    <span class="error">Ce champs est requis</span>
+}
+@if(errors?.['email'] && control?.touched){
+    <span class="error">Rentrez un email valide</span>
+}
+@if(errors?.['minlength'] && control?.touched){
+    <span class="error">Ce champs doit faire au moins {{errors?.["minlength"].requiredLength}} caractères</span>
+}
