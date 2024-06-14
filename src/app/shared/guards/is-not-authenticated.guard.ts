@@ -5,6 +5,8 @@ import { inject } from '@angular/core';
 export const isNotAuthenticatedGuard: CanActivateFn = (route, state) => {
   const authService : AuthService = inject(AuthService);
   const router: Router = inject(Router);
-  router.navigate(['/']);
+  if(authService.currentUser){
+    router.navigate(['/']);
+  }
   return !authService.currentUser;
 };
